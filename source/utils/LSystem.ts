@@ -18,17 +18,15 @@ export class LSystem {
 
     private axiom: string;
     private rules: Array<Rule>;
-    private iterations: number;
 
-    constructor(axiom: string, rules: Rule[], iterations: number) {
+    constructor(axiom: string, rules: Rule[]) {
         this.axiom = axiom;
         this.rules = rules;
-        this.iterations = iterations;
     }
 
-    public generate(): string {
+    public generate(iterations: number): string {
         let result = this.axiom;
-        for (let i = 0; i < this.iterations; i++) {
+        for (let i = 0; i < iterations; i++) {
             result = this.applyRules(result);
         }
         return result;

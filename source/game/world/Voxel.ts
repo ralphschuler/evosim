@@ -1,8 +1,9 @@
 import { GameObject } from "../GameObject";
+import { IElement } from "../asset/interfaces/IElement";
 
-export class Voxel<T> extends GameObject {
+export class Voxel<T extends IElement> extends GameObject {
 
-  public constructor(parent: GameObject) {
+  public constructor(parent: GameObject, position: { x: number, y: number, z: number }) {
     super(parent);
   }
 
