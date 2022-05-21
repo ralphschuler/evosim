@@ -3,10 +3,10 @@ import { Neuron } from './Neuron';
 
 export class Network {
   private inputLayer: Layer;
-  private hiddenLayers: Layer[];
+  private hiddenLayers: Array<Layer>;
   private outputLayer: Layer;
 
-  public constructor(inputLayerLength: number, hiddenLayerLengths: number[], outputLayerLength: number) {
+  public constructor(inputLayerLength: number, hiddenLayerLengths: Array<number>, outputLayerLength: number) {
     this.inputLayer = new Layer(inputLayerLength);
     this.hiddenLayers = hiddenLayerLengths.map(length => new Layer(length));
     this.outputLayer = new Layer(outputLayerLength);
@@ -20,21 +20,21 @@ export class Network {
     this.hiddenLayers[this.hiddenLayers.length - 1].connect(this.outputLayer);
   }
 
-  public activate(input: number[]): number[] {
+  public activate(input: Array<number>): Array<number> {
     const output = this.inputLayer.Neurons.map(
       (neuron: Neuron, index: number) => neuron.activate(input[index]));
     return this.outputLayer.Neurons.map(
       (neuron: Neuron, index: number) => neuron.activate(output[index]));
   }
 
-  public propagate(error: number[]): void {
+  public propagate(error: Array<number>): void {
     const output = this.inputLayer.Neurons.map(
       (neuron: Neuron, index: number) => neuron.activate(error[index]));
     this.outputLayer.Neurons.map(
       (neuron: Neuron, index: number) => neuron.propagate(output[index]));
   }
 
-  public train(input: number[], output: number[]): void {
+  public train(input: Array<number>, output: Array<number>): void {
     const outputActivation = this.activate(input);
     const error = output.map((value, index) => value - outputActivation[index]);
     this.propagate(error);

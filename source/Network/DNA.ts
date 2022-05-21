@@ -1,16 +1,16 @@
 export class DNA {
-    private readonly genes: number[];
-    public get Genes(): number[] {
+    private readonly genes: Array<number>;
+    public get Genes(): Array<number> {
         return this.genes;
     }
 
-    constructor(genes: number[]) {
+    constructor(genes: Array<number>) {
         this.genes = genes;
     }
 
     public crossover(partner: DNA): DNA {
         let midpoint = Math.floor(Math.random() * this.genes.length);
-        let childGenes: number[] = [];
+        let childGenes: Array<number> = [];
 
         for (let i = 0; i < this.genes.length; i++) {
             if (i > midpoint) {
@@ -40,7 +40,7 @@ export class DNA {
     }
 
     public static random(length: number): DNA {
-        let genes: number[] = [];
+        let genes: Array<number> = [];
 
         for (let i = 0; i < length; i++) {
             genes[i] = Math.floor(Math.random() * 256);
@@ -50,7 +50,7 @@ export class DNA {
     }
 
     public static fromString(str: string): DNA {
-        let genes: number[] = [];
+        let genes: Array<number> = [];
 
         for (let i = 0; i < str.length; i++) {
             genes[i] = str.charCodeAt(i);

@@ -1,12 +1,12 @@
 import { IReaction } from './IReaction'
 
 export interface IElement {
-  colors: string[]
+  colors: Array<string>
   opacity: number
   gravity: number
   slip: number
   slide: number
   scatter: number
-  reaction: IReaction[]
-  selfReaction: IReaction[]
+  reaction: Array<IReaction>
+  selfReaction: Array<IReaction>
 }

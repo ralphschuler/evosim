@@ -2,8 +2,8 @@ import { Neuron } from './Neuron';
 
 export class Layer {
 
-    private neurons: Neuron[];
-    public get Neurons(): Neuron[] {
+    private neurons: Array<Neuron>;
+    public get Neurons(): Array<Neuron> {
         return this.neurons;
     }
 

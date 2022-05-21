@@ -1,9 +1,9 @@
 export class SafeArray<T> {
-    private array: T[];
-    private addQueue: T[];
-    private removeQueue: T[];
+    private array: Array<T>;
+    private addQueue: Array<T>];
+    private removeQueue: Array<T>;
 
-    public constructor(items?: T[] ) {
+    public constructor(items?: Array<T> ) {
         this.array = items || [];
         this.addQueue = [];
         this.removeQueue = [];
@@ -25,8 +25,8 @@ export class SafeArray<T> {
         this.removeQueue.push(item);
     }
 
-    public filter(predicate: (item: T) => boolean): T[] {
-        const result: T[] = [];
+    public filter(predicate: (item: T) => boolean): Array<T> {
+        const result: Array<T> = [];
         this.forEach((item: T) => {
             if (predicate(item)) {
                 result.push(item);
