@@ -10,6 +10,7 @@ The main goal of this Repo is to learn the concept of genetic algorithms and mac
 > Creating a Ecosystem with creatures based on Genetic Algorithms and Procedural Generation
 - The world should be procedural generated including trees plants and so on.
 - The world should generate biomes based on heat and moisture maps.
+- Elements, Biomes and such should be dynamically loaded and parsed from json files.
 - Creatures should have a simple neural net controlling their behavior.
   - Input Neurons
     - Clock

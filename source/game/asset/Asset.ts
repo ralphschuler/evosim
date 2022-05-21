@@ -13,7 +13,8 @@ export class Asset<T> {
 
     public async load(): Promise<void> {
         try {
-            this.data = await import(this.location);
+            const data = await import(this.location);
+            if (data instanceof T)
         } catch (error: any) {
             throw new Error(`Failed to load asset at ${this.location}`);
         }
