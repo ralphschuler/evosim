@@ -10,10 +10,10 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@tweakpane/core@^1.0.8":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@tweakpane/core/-/core-1.0.9.tgz#4135618a75165b45e0f44a4af71b5cb337fedabd"
-  integrity sha512-vvS0IGhJ9Wq37vgldgF9Ohh5BA0RKapffhzyTN84170nt/0SCreXB9zIMLlbL4ZxvCKAKJ0080wJHS5aVhf20Q==
+"@tweakpane/core@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@tweakpane/core/-/core-1.1.0.tgz#a8290a7fbc1e0b63ba6ba87f53f8f21ed0401b65"
+  integrity sha512-vbbiQb+aoFI13lIbE7DJvhHZVE1YlUpGoaAamSpU6wLp2jA3VowS1wfRJBBB8IBCYm7nF6ULl7zfJKxl1XdyfA==
 
 "@tweakpane/plugin-essentials@^0.1.4":
   version "0.1.4"

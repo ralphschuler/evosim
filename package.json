@@ -30,7 +30,7 @@
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "dependencies": {
-    "@tweakpane/core": "^1.0.8",
+    "@tweakpane/core": "^1.1.0",
     "@tweakpane/plugin-essentials": "^0.1.4",
     "simplex-noise": "^3.0.1",
     "three": "^0.137.5",
