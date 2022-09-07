@@ -15,10 +15,10 @@
   resolved "https://registry.yarnpkg.com/@tweakpane/core/-/core-1.0.9.tgz#4135618a75165b45e0f44a4af71b5cb337fedabd"
   integrity sha512-vvS0IGhJ9Wq37vgldgF9Ohh5BA0RKapffhzyTN84170nt/0SCreXB9zIMLlbL4ZxvCKAKJ0080wJHS5aVhf20Q==
 
-"@tweakpane/plugin-essentials@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@tweakpane/plugin-essentials/-/plugin-essentials-0.1.4.tgz#144b54dfe274bb1c161285c358268573e039cb99"
-  integrity sha512-beJWDrTo6a29eh1L5AFsiybsiWL2BFMN+49dwAzccnR7vr6uXy3qxJIZVr3J91KXZwDEg1XZ+ZW301Sz+xTBqw==
+"@tweakpane/plugin-essentials@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@tweakpane/plugin-essentials/-/plugin-essentials-0.1.5.tgz#2c59b319c390692cb0c061c248d8d4e5bba8cdfc"
+  integrity sha512-dt+fwtUEVmBxsVhGNSqtY6dN3rOmxIt3zSA/cSFMs2eBbMrnBTSkJBe2JMXKodTTR6OOFihq6yxyRFqG5wsP3w==
 
 "@types/node@^17.0.34":
   version "17.0.34"
