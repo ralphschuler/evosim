@@ -5,6 +5,7 @@ for now its just a tought experiment for myself with some kind of implementation
 
 The main goal of this Repo is to learn the concept of genetic algorithms and machine learning.
 
+
 ## Idea
 > Creating a Ecosystem with creatures based on Genetic Algorithms and Procedural Generation
 - The world should be procedural generated including trees plants and so on.
@@ -90,16 +91,3 @@ The main goal of this Repo is to learn the concept of genetic algorithms and mac
 - NeuralNet
   - DNA
   - Neuron
-
-## Development
-
-```bash
-yarn # In order to install the required node_modules
-yarn dev # Opens the app to http://localhost:3000
-```
-
-## Build
-```bash
-yarn # In order to install the required node_modules
-yarn build # Builds the app to dist/
-```
